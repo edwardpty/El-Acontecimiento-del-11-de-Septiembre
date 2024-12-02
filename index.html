@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Acontecimiento del 11 de Septiembre</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #0c2e4e;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
+        header h1 {
+            margin: 0;
+            color: #ffdd00;
+            font-size: 2.5em;
+        }
+        nav {
+            background: #1e3c72;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #ffdd00;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+            padding: 5px 10px;
+        }
+        nav a:hover {
+            background: #ffdd00;
+            color: #1e3c72;
+            border-radius: 5px;
+        }
+        .content {
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 800px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            background: #0c2e4e;
+            color: #ffdd00;
+            padding: 10px 0;
+        }
+        .section {
+            display: none;
+        }
+        .active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>El Acontecimiento del 11 de Septiembre</h1>
+        <p>Creado por: Leider Sanjur, Gerald Morales y Yackniel Martínez</p>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('intro')">Introducción</a>
+        <a href="javascript:void(0)" onclick="showSection('detalles')">Detalles</a>
+        <a href="javascript:void(0)" onclick="showSection('impacto')">Impacto Global</a>
+        <a href="javascript:void(0)" onclick="showSection('conclusion')">Conclusión</a>
+    </nav>
+
+    <!-- Introducción -->
+    <div id="intro" class="content section active">
+        <h2>Introducción</h2>
+        <p>El 11 de septiembre de 2001, Estados Unidos fue atacado por un grupo terrorista conocido como Al Qaeda. Cuatro aviones fueron secuestrados, dos de los cuales impactaron las Torres Gemelas en Nueva York.</p>
+        <img src="intro.jpg" alt="Introducción" style="width: 100%; border-radius: 10px;">
+    </div>
+
+    <!-- Detalles -->
+    <div id="detalles" class="content section">
+        <h2>Detalles de los Acontecimientos</h2>
+        <ul>
+            <li>8:46 a.m.: Impacto en la Torre Norte del World Trade Center.</li>
+<img src="impacto.jpg" alt="Impacto en la Torre Norte del World Trade Center" style="width: 100%; border-radius: 10px;">
+            <li>9:03 a.m.: Impacto en la Torre Sur.</li>
+<img src="impactotorresur.jpg" alt="Impacto en la Torre Sur" style="width: 100%; border-radius: 10px;">
+            <li>9:37 a.m.: Impacto en el Pentágono.</li>
+<img src="impactopentagono.jpg" alt="Impacto en el Pentágono" style="width: 100%; border-radius: 10px;">
+            <li>10:03 a.m.: Vuelo 93 se estrella en Pensilvania.</li>
+<img src="vuelo93.jpg" alt="Vuelo 93 se estrella en Pensilvania" style="width: 100%; border-radius: 10px;">
+        </ul>
+    </div>
+
+    <!-- Impacto Global -->
+    <div id="impacto" class="content section">
+        <h2>Impacto Global</h2>
+        <p>Los atentados del 11 de septiembre tuvieron efectos profundos en la política mundial, incluyendo el inicio de la "Guerra contra el Terrorismo" y cambios en las políticas de seguridad. Los terroristas de Al Qaeda mataron a 2.996 personas, incluidos los 19 terroristas que llevaron a cabo los ataques. Además, más de 6.000 personas resultaron heridas. El gobierno de Estados Unidos respondió a los ataques con un nuevo tipo de guerra, sin límites claramente definidos. Un mes después de los ataques, el presidente George W. Bush anunció un ataque contra Afganistán. En una encuesta de Pew, el 76% de los consultados mencionaron los ataques del 11-S como uno de los 10 eventos históricos más importantes de su vida. Un año después de los ataques, el gobierno estadounidense anunció que se enfrentaría a amenazas terroristas o de "estados canallas" a través de ataques preventivos.</p>
+<img src="impactoglobal.jpg" alt="Impacto Global" style="width: 100%; border-radius: 10px;">
+    </div>
+
+    <!-- Conclusión -->
+    <div id="conclusion" class="content section">
+        <h2>Conclusión</h2>
+        <p>El 11 de septiembre sigue siendo un punto de referencia en la historia moderna, afectando profundamente las relaciones internacionales y la política interior de muchos países.</p>
+<img src="conclusion.jpg" alt="Conclusión" style="width: 100%; border-radius: 10px;">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Leider Sanjur, Gerald Morales y Yackniel Martínez</p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => section.classList.remove('active'));
+
+            // Mostrar la sección seleccionada
+            const activeSection = document.getElementById(sectionId);
+            activeSection.classList.add('active');
+        }
+    </script>
+</body>
+</html>
+
+
